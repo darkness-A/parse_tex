@@ -408,6 +408,11 @@ class SkinParser:
                 1920,
                 1080
             ],
+            "ControlSensitivity": {
+                "Zoom": 18.0,
+                "Pan": 0.35,
+                "Rotate": 0.5
+            },
             "PATHS":
             [
                 {
@@ -444,6 +449,6 @@ class SkinParser:
             json.dump(data, f, ensure_ascii=False, indent=4)
         logger.success("写出配置json成功")
 #正常情况下是传入一个bin文件，然后解析出路径
-bin=r"E:\myapp\lol\edit\wad_edit\亚托克斯\data\characters\aatrox\skins\skin33.bin"
+bin=r"E:\myapp\lol\edit\wad_edit\亚托克斯\data\characters\aatrox\skins\skin2.bin"
 parser = SkinParser(bin)
 parser.parse()
